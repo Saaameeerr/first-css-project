@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .container{
+      background-color: rgb(69, 68, 68);
+      height: 300px;
+      width: 450px;
+      border: 5px solid black;
+      border-radius: 15px;
+      display: flex;
+      text-align: justify;
+      flex-wrap: wrap;
+      align-items: flex-start;
+      /* flex-direction:column-reverse ; */
+      
+    }
+    .box{
+      background-color: chocolate;
+      height: 50px;
+      width: 50px;
+      border: 3px solid black;
+      border-radius: 3px;
+      margin: 9px;
+    }
+    @media (max-width: 450px) {
+      .container{
+        flex-direction:column;
+        background-color: aqua;
+
+      }
+      
+    }
+      
+   
+  </style>
+</head>
+<body>
+  <h1> Flex-box </h1>
+  <div class="container" id="flex">
+  <div class="box box1"><h2>1</h2></div>
+  <div class="box"><h2>2</h2></div>
+  <div class="box"><h2>3</h2></div>
+  <div class="box"><h2>4</h2></div>
+  <div class="box"><h2>5</h2></div>
+  <div class="box"><h2>6</h2></div>
+</div>
+</body>
+</html>
